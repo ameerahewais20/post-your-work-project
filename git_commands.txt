@@ -1,0 +1,61 @@
+Git Commands Documentation - Post Your Work on GitHub
+
+A. Create a new folder for the project and move into it
+mkdir bikeshare-project
+cd bikeshare-project
+
+B. Initialize a Git repository
+git init
+
+C. Add the main Python file and README file
+git add bikeshare.py README.md
+
+D. Commit the first version of the project
+git commit -m "Add bikeshare project files"
+
+E. Rename the default branch to main
+git branch -M main
+
+F. Connect the local repository to GitHub
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+
+G. Push the main branch to GitHub
+git push -u origin main
+
+H. Create and switch to the documentation branch
+git checkout -b documentation
+
+I. Update README.md with project details, files used, instructions, and credits
+git add README.md
+git commit -m "Update project documentation"
+git push -u origin documentation
+
+J. Return to the main branch
+git checkout main
+
+K. Create and switch to the refactoring branch
+git checkout -b refactoring
+
+L. Refactor bikeshare.py to improve readability and structure
+git add bikeshare.py
+git commit -m "Refactor bikeshare code"
+git push -u origin refactoring
+
+M. Return to the main branch
+git checkout main
+
+N. Create the .gitignore file to prevent CSV files from being pushed
+echo "*.csv" > .gitignore
+
+git add .gitignore
+git commit -m "Add gitignore for CSV files"
+git push origin main
+
+O. Check local branches
+git branch
+
+P. Check remote branches
+git branch -r
+
+Q. Check commit history
+git log --oneline --all --decorate
